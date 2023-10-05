@@ -7,14 +7,14 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/user/") // creating a user endpoint
+@RequestMapping("/user/")
 public class UserController {
     @GetMapping("/create")
     public String createUser(Model model){
 
         model.addAttribute("user", new UserDTO());
 
-//        model.addAttribute("roles", LISTOFROLES);
+//        model.addAttribute("roles", LISTOFROLES); //bring me all roles from DB
         return "user/create";
 
     }
