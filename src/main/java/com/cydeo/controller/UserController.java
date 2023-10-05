@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/user/")
+@RequestMapping("/user/") // creating a user endpoint
 public class UserController {
     @GetMapping("/create")
     public String createUser(Model model){
